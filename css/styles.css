@@ -1,0 +1,178 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+/*
+:root {
+  --color-bg: #0D1B2A;
+  --color-primary: #1B263B;
+  --color-secondary: #415A77;
+  --color-text: #E0E1DD;
+  --color-accent: #00B4D8;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background-color: #0D1B2A;  /* azul oscuro */
+  color: #E0E1DD;             /* blanco grisáceo */
+  line-height: 1.6;
+}
+
+/* aca esta el  Encabezado y el menú */
+header {
+  background-color: #1B263B;  /* azul medio */
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*estilo del nombre del sitio Mundo digital*/
+.logo {
+   color: #00B4D8;             /* turquesa */
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+/*cambia de color cuando pasas el mousee*/
+.nav-links a {
+  text-decoration: none;
+  color:  #E0E1DD;;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00B4D8;  
+}
+
+/* Titulo bde Bienvendia */
+.hero {
+  background: rgb(107, 218, 208);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  color: #00B4D8; 
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+/*  */
+.carousel {
+  position: relative;
+  width: 800px;
+height: 300px;
+  margin: 40px auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*se mueve cuando giran las magenes*/
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+
+.carousel img {
+  width: 200%;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 10px;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.carousel img.active {
+  width: 300px;
+  height: 220px;
+  opacity: 1;
+}
+
+/*botones de <> */
+.carousel button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2em;
+  padding: 10px 15px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.carousel button:hover {
+  background-color: #00B4D8;
+  color: black;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* aca hice que cuando pases por arriba levante la tarjeta y aumente la sombra*/
+.info-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color:  #1B263B;
+}
+
+.card {
+  background-color: #415A77; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+  color: #00B4D8;  
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #E0E1DD;   
+  font-size: 0.95em;
+}
+
+/* */
+footer {
+  background-color: #415A77; 
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #E0E1DD;             
+}
