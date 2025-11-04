@@ -57,7 +57,7 @@ header {
 
 /* Titulo bde Bienvendia */
 .hero {
-  background: rgb(107, 218, 208);
+  background: rgba(1, 7, 59, 0.541);
   text-align: center;
   padding: 60px 20px;
 }
