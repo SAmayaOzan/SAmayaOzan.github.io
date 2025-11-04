@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/stylecontacto.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">      
+            <div class="left">
+                <img src="imagenes/S-J.png" alt="loguito SyJ">
+                 </div>
+                <h1 class="center-title">Mundo digital</h1>
+        
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulo.html">Artículos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-container">
+        <h1>Contacto / Inscripción</h1>
+        <p>Complete el siguiente formulario para consultas o inscripción a un curso</p>
+
+        <form id="contactForm">
+            <label>Nombre completo *</label>
+            <input type="text" id="nombre" required>
+
+            <label>Email *</label>
+            <input type="email" id="email" required>
+
+            <label>Teléfono</label>
+            <input type="tel" id="telefono">
+
+            <label>Curso de interés *</label>
+            <select id="curso" required>
+                <option value="">Seleccione...</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML & CSS">HTML & CSS</option>
+            </select>
+
+            <label>Mensaje</label>
+            <textarea id="mensaje" rows="4"></textarea>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+
+            <p id="resultado" class="resultado"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Mundo Digital — Es el Futuro</p> 
+    </footer>
+
+    <script src="js/contacto.js"></script>
+</body>
+</html>
