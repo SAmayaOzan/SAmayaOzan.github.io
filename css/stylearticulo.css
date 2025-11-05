@@ -116,3 +116,11 @@ gap: 10px;
   font-size: 15px;
   line-height: 1.6;
 }
+
+footer {
+  background-color: #415A77; 
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #E0E1DD;             
+}
