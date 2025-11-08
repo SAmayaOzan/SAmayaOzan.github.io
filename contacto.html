@@ -110,7 +110,7 @@
             resultado.innerHTML= "";
 
             const exitoMsg=document.createElement("p");
-            exitoMsg.innerHTML=`✅ Gracias <strong>${nombre}</strong>! Tu inscripción fue enviada correctamente.`;
+            exitoMsg.innerHTML=`✅Gracias <strong>${nombre}</strong>! Tu inscripción fue enviada correctamente, Saludos Usuario!!!✅`;
             resultado.appendChild(exitoMsg);
 
             const datos= document.createElement("div");
@@ -118,13 +118,15 @@
             datos.innerHTML= `
             <strong>DATOS ENVIADOS:</strong><br>
             📧 Email: ${email}<br>
-            📞 Teléfono: ${telefono || "No ingresado"}<br>
+            📞 Teléfono: ${telefono || "No Ingresado"}<br>
             🎓 Curso: ${curso}<br>
-            📝 Mensaje: ${mensaje || "Sin mensaje"}
+            📝 MENSAJE: ${mensaje || "Sin Mensaje"}
             `;
             resultado.appendChild(datos);
 
             form.reset();
+
+        
         }
         });
         });
