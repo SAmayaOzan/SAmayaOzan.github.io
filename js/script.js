@@ -1,10 +1,19 @@
-const imagenes = document.querySelectorAll("#imgs img");
+const imagenes = [
+    "imagenes/img1.jpg",
+    "imagenes/img2.jpg",
+    "imagenes/img3.jpg",
+    "imagenes/img4.jpg",
+    "imagenes/img5.jpg",
+]
 let contador = 0;
+
+const imgPrincipal = document.getElementById("imagen-medio");
+
 
 
 function mostrarImagen() {
-    imagenes.forEach(img => img.style.display = "none");
-    imagenes[contador].style.display = "block";
+   imgPrincipal.src  = imagenes[contador];
+   // imagenes[contador].style.display = "block";
 }
 
 
